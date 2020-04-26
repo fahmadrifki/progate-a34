@@ -9,18 +9,60 @@
     <title>Progate - A34</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+
+    <!-- Import Font Source Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Header -->
+    <!-- Navbar Header -->
     <header>
+      <nav id="header">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-12 h-100 d-flex justify-content-between align-items-center">
+              <div class="brand d-inline-flex d-md-none align-items-center py-2 h-100">
+                <button class="hamburger hamburger--squeeze" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </div>
+              <a href="/" class="brand d-inline-flex align-items-center py-2 h-100"><img class="w-100 h-auto" src="assets/img/logo.png"/></a>
+              <div class="ml-auto d-none d-md-inline-flex align-items-center nav-header h-100 ">
+                <ul class="list-unstyled float-left mb-0 nav-menu h-100 mr-4">
+                  <li class="float-left h-100"><a href="service.html" class="nav-link py-2 px-4 h-100 d-flex align-items-center text-uppercase">pets service</a></li>
+                  <li class="float-left h-100"><a href="blog.html" class="nav-link py-2 px-4 h-100 d-flex align-items-center text-uppercase">blog</a></li>
+                  <li class="float-left h-100"><a href="contact.html" class="nav-link py-2 px-4 h-100 d-flex align-items-center text-uppercase">contact us</a></li>
+                </ul>
+                <a href="https://wa.me/628920909229" target="_blank" class="nav-link-btn py-2 px-3 d-flex align-items-center text-uppercase mr-3"><img src="./assets/img/wa.png" class="mr-2" style="width: 20px;height: 20px;">0892-0909229</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
+      <div id="header-m" class="" style="display: none;">
+        <div class="row">
+          <div class="col-12 text-center">
+            <ul class="list-unstyled mb-0 nav-menu-m ">
+              <li class=""><a href="service.html" class="nav-link py-3 px-3 d-flex align-items-center justify-content-center text-uppercase">pets service</a></li>
+              <li class=""><a href="blog.html" class="nav-link py-3 px-3 d-flex align-items-center justify-content-center text-uppercase">blog</a></li>
+              <li class=""><a href="contact.html" class="nav-link py-3 px-3 d-flex align-items-center justify-content-center text-uppercase">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </header>
-    <!-- /Header -->
+    <div class="header-space"></div>
+    <!-- /Navbar Header -->
 
     <!-- Main -->
     <main>
@@ -34,6 +76,7 @@
     </footer>
     <!-- /Footer -->
     
-    <script src="" async defer></script>
+    <!-- Import Javascript -->
+    <script type="text/javascript" src="./assets/js/script.js"></script>
   </body>
 </html>

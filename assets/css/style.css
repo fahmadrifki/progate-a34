@@ -1,4 +1,117 @@
 /*--- Write Style Here ---*/
+/*--- Header ---*/
+#header {
+  width: 100%;
+  height: 70px;
+  background: #00cdc1;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  z-index: 2;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+#header .nav-header .nav-menu li a {
+  color: white;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+#header .nav-header .nav-menu li a:hover {
+  background: white;
+  color: #00cdc1;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.brand {
+  width: 125px;
+  height: auto;
+}
+
+.h-m {
+  width: 50px;
+}
+.h-m .hamburger {
+  margin-left: -0.6rem;
+}
+.h-m .hamburger .hamburger-box .hamburger-inner {
+  background-color: #ffffff !important;
+}
+.h-m .hamburger .hamburger-box .hamburger-inner::before {
+  background-color: #ffffff !important;
+}
+.h-m .hamburger .hamburger-box .hamburger-inner::after {
+  background-color: #ffffff !important;
+}
+
+.src-m {
+  width: 45px;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.nav-header .nav-menu li a {
+  color: white;
+  font-size: 0.85rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.nav-header .nav-menu li a:hover {
+  background: white;
+  color: #00cdc1;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.nav-link-btn {
+  background: white;
+  border-radius: 1.25rem;
+  color: #00cdc1;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.nav-link-btn:hover {
+  color: #00cdc1;
+  text-decoration: none;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+#header-m {
+  position: fixed;
+  width: 100%;
+  height: 91.4vh;
+  background: white;
+  z-index: 1070;
+  bottom: 0;
+}
+
+.nav-menu-m li a {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16pt;
+  font-weight: 700;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.nav-menu-m li a:hover {
+  background: white;
+  color: #00cdc1;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header-space {
+  width: 100%;
+  height: 70px;
+  background: white;
+}
+
+.hamburger-inner {
+  background-color: #212121;
+}
+
+/*--- /Header ---*/
 
 
 /*--- Small devices (landscape phones, 576px and up) ---*/
