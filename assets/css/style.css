@@ -150,8 +150,10 @@ a{
   opacity: .8;
 }
 .extra-2 h2{
+  font-family: serif;
+  font-weight: bold;
   color:coral;
-  opacity: .6;
+  opacity: .8;
 }
 .extras-container{
   width:95%;
@@ -176,6 +178,7 @@ a{
 }
 .extra-3-content h3{
   color:coral;
+  opacity:.6;
 }
 .extra-3-flex-box{
   display: flex;
@@ -195,9 +198,11 @@ a{
   margin:0 auto;
   text-align: center;
 }
-.box-3-top {
+.box-3-top p{
   line-height: 30px;
   margin-bottom: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 .box-3-top img{
   width:  75%;
@@ -277,14 +282,19 @@ footer{
   width:95%;
   margin:0 auto;
   color:black;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  color:palegoldenrod;
+  font-weight: bold;
+
+  
 }
 .footer-left{
-  width: 50%;
+  flex:auto;
   text-align: left;
 }
 .footer-right{
-  width:50%;
+  flex:auto;
   text-align: right;
 }
 /*--- Small devices (landscape phones, 576px and up) ---*/
@@ -309,6 +319,14 @@ footer{
   .btn{
     width: 100%;
 
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .footer-left,.footer-right{
+    flex:auto;
+    text-align: center;
+    
   }
   
     
@@ -337,6 +355,14 @@ footer{
     width: 100%;
 
   }
+  .footer{
+    flex-direction: column;
+  }
+  .footer-left,.footer-right{
+    flex:auto;
+    text-align: center;
+    
+  }
 }
 
 /*--- Large devices (desktops, 992px and up) ---*/
@@ -354,6 +380,20 @@ footer{
   .btn{
     width: 50%;
   }
+  .footer{
+    flex-direction: row;
+  }
+  .footer-left{
+    flex:auto;
+    text-align: left;
+    
+  }
+  .footer-right{
+    flex:auto;
+    text-align: right;
+  }
+  .fa,.fab{
+    margin-right: 0px;}
     
 }
 /*--- Extra large devices (large desktops, 1200px and up) ---*/
@@ -374,6 +414,18 @@ footer{
   }
   .btn{
     width: 25%;
+  }
+  .footer{
+    flex-direction: row;
+  }
+  .footer-left{
+    flex:auto;
+    text-align: left;
+    
+  }
+  .footer-right{
+    flex:auto;
+    text-align: right;
   }
     
 }
