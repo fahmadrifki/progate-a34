@@ -146,8 +146,12 @@ a{
 }
 .extra-2{
   padding:30px 0;
-  background-color: rgb(75, 227, 247,1);
+  background-color: rgb(75, 227, 247,.8);
   opacity: .8;
+}
+.extra-2 h2{
+  color:coral;
+  opacity: .6;
 }
 .extras-container{
   width:95%;
@@ -163,9 +167,15 @@ a{
   letter-spacing: 3px;
 }
 /*extra 3 */
+.extra-3{
+  background-color: rgba(75, 227, 247,.3);
+}
 .extra-3-content{
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.extra-3-content h3{
+  color:coral;
 }
 .extra-3-flex-box{
   display: flex;
@@ -175,7 +185,8 @@ a{
 .extras-3-box{
   flex:auto;
   width: 20%;
-  border: lightgray dashed 1px;
+  background-color: rgba(216, 191, 216,0.2);
+  border: solid 1px rgba(74, 116, 155, 0.2);
 }
 
 .box-3-top{
@@ -255,7 +266,7 @@ a{
 
 /*footer */
 footer{
-  border-top: dashed 5px white;
+  border-top: dashed 5px rgb(75, 227, 247,.3);
   width:100%;
   background-color: #00cdc1;
   padding:30px 0;
@@ -266,15 +277,16 @@ footer{
   width:95%;
   margin:0 auto;
   color:black;
+  display: inline-block;
 }
 .footer-left{
-  float: left;
+  width: 50%;
+  text-align: left;
 }
 .footer-right{
-  float: right;
+  width:50%;
+  text-align: right;
 }
-
-
 /*--- Small devices (landscape phones, 576px and up) ---*/
 @media (min-width: 0px) { 
   .extras-3-box{
@@ -298,9 +310,7 @@ footer{
     width: 100%;
 
   }
-  .footer-left,.footer-right{
-    float:none;
-  }
+  
     
 }
 
