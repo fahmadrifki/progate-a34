@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 *{
     box-sizing: border-box;
 }
@@ -166,16 +169,19 @@ h1, h2, h3, h4, h5, h6, p, div {
 .extra-3-flex-box{
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 .extras-3-box{
   flex:auto;
-  width: 25%;
+  width: 20%;
   border: lightgray dashed 1px;
 }
+
 .box-3-top{
   padding: 10px 0;
   width: 50%;
   margin:0 auto;
+  text-align: center;
 }
 .box-3-top img{
   width:  75%;
@@ -186,6 +192,48 @@ h1, h2, h3, h4, h5, h6, p, div {
 .box-3-bottom{
   width: 90%;
   margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.box-3-bottom-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.box-3-bottom-flex-small{
+  display:none;
+  flex-wrap: nowrap;
+  visibility: hidden;
+}
+.btn{
+  text-align: center;
+  flex:auto;
+  width:auto;
+  padding: 12px 12px;
+  border:white solid 1px;
+  color:white;
+
+}
+.btn:hover{
+  opacity: 1;
+}
+.fb{
+  background-color: rgba(59, 89, 152,1);
+  opacity: 0.8;
+}
+.twitter{
+  background-color: rgba(85, 172, 238,1);
+  opacity: .8;
+} 
+.email{
+  background-color: rgba(35, 155, 118,1);
+  opacity: .8;
+}
+.discord{
+  background-color: grey;
+  opacity: .8;
+}
+.fa,.fab{
+  margin-right: 5px;
 }
 /*footer */
 footer{
@@ -199,20 +247,30 @@ footer{
 
 
 /*--- Small devices (landscape phones, 576px and up) ---*/
-@media (min-width: 576px) { 
+@media (max-width: 670px) { 
+  .extras-3-box{
+    width: 100%;
+  }
+  .box-3-bottom-flex{
+    display: none;
+    flex-wrap: nowrap;
+    visibility: hidden;
+  }
+  .box-3-bottom-flex-small{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+  }
+  .btn{
+    width: 100%;
+
+  }
     
 }
 
-/*--- Medium devices (tablets, 768px and up) ---*/
-@media (min-width: 768px) { 
-    
+@media (max-width:1000px ){
+  
 }
-
-/*--- Large devices (desktops, 992px and up) ---*/
-@media (min-width: 992px) { 
-    
-}
-
 /*--- Extra large devices (large desktops, 1200px and up) ---*/
 @media (min-width: 1200px) { 
     
