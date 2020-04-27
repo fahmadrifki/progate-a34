@@ -1,5 +1,16 @@
 /*--- Write Style Here ---*/
 /*--- Header ---*/
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+
 #header {
   width: 100%;
   height: 70px;
@@ -112,6 +123,79 @@
 }
 
 /*--- /Header ---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*extra 2 */
+.extra-2,.extra-3{
+  width:100%;
+}
+.extra-2{
+  padding:30px 0;
+  background-color: lavenderblush;
+}
+.extras-container{
+  width:90%;
+  margin:0 auto;
+}
+.extras-2-content{
+  font-weight: lighter;
+  text-align: center;
+}
+.extras-2-content h2{
+  font-size:30px;
+  margin-bottom:15px;
+  letter-spacing: 3px;
+}
+/*extra 3 */
+.extra-3-content{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.extra-3-flex-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.extras-3-box{
+  flex:auto;
+  width: 25%;
+  border: lightgray dashed 1px;
+}
+.box-3-top{
+  padding: 10px 0;
+  width: 50%;
+  margin:0 auto;
+}
+.box-3-top img{
+  width:  75%;
+  height: 75%;
+  border-radius: 50%;
+  
+}
+.box-3-bottom{
+  width: 90%;
+  margin: 0 auto;
+}
+/*footer */
+footer{
+  border-top: dashed 5px white;
+  width:100%;
+  background-color: #00cdc1;
+  padding:30px 0;
+  font-family:"Lucida Grande";
+  text-align: center;
+}
 
 
 /*--- Small devices (landscape phones, 576px and up) ---*/
