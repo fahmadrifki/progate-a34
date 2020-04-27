@@ -146,10 +146,11 @@ a{
 }
 .extra-2{
   padding:30px 0;
-  background-color: lavenderblush;
+  background-color: rgb(75, 227, 247,1);
+  opacity: .8;
 }
 .extras-container{
-  width:90%;
+  width:95%;
   margin:0 auto;
 }
 .extras-2-content{
@@ -158,7 +159,7 @@ a{
 }
 .extras-2-content h2{
   font-size:30px;
-  margin-bottom:15px;
+  margin-bottom:50px;
   letter-spacing: 3px;
 }
 /*extra 3 */
@@ -183,6 +184,10 @@ a{
   margin:0 auto;
   text-align: center;
 }
+.box-3-top {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
 .box-3-top img{
   width:  75%;
   height: 75%;
@@ -196,10 +201,12 @@ a{
   padding-bottom: 10px;
 }
 .box-3-bottom-flex{
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
 }
 .box-3-bottom-flex-small{
+  text-align: center;
   display:none;
   flex-wrap: nowrap;
   visibility: hidden;
@@ -209,32 +216,43 @@ a{
   flex:auto;
   width:auto;
   padding: 12px 12px;
-  border:white solid 1px;
   color:white;
+  margin-bottom: 10px;
+  
 
+}
+.btn:active{
+  position: relative;
+  top:5px;
+  box-shadow: none;
 }
 .btn:hover{
   opacity: 1;
 }
+
 .fb{
-  background-color: rgba(59, 89, 152,1);
+  background-color: rgb(59, 88, 152);
+  box-shadow: 0px 5px rgba(59, 88, 152,1.1);
+  
   opacity: 0.8;
 }
 .twitter{
   background-color: rgba(85, 172, 238,1);
+  box-shadow: 0px 5px rgba(85, 172, 238,1.1);
   opacity: .8;
 } 
 .email{
   background-color: rgba(35, 155, 118,1);
+  box-shadow: 0px 5px rgba(35, 155, 118,1.1);
   opacity: .8;
 }
 .discord{
-  background-color: grey;
+  background-color: rgb(128, 128, 128);
+  box-shadow: 0px 5px rgba(128, 128, 128,1.1);
   opacity: .8;
 }
-.fa,.fab{
-  margin-right: 5px;
-}
+
+
 /*footer */
 footer{
   border-top: dashed 5px white;
@@ -244,13 +262,28 @@ footer{
   font-family:"Lucida Grande";
   text-align: center;
 }
+.footer{
+  width:95%;
+  margin:0 auto;
+  color:black;
+}
+.footer-left{
+  float: left;
+}
+.footer-right{
+  float: right;
+}
 
 
 /*--- Small devices (landscape phones, 576px and up) ---*/
-@media (max-width: 670px) { 
+@media (min-width: 0px) { 
   .extras-3-box{
+    flex:auto;
     width: 100%;
   }
+
+  .fa,.fab{
+    margin-right: 5px;}
   .box-3-bottom-flex{
     display: none;
     flex-wrap: nowrap;
@@ -265,13 +298,72 @@ footer{
     width: 100%;
 
   }
+  .footer-left,.footer-right{
+    float:none;
+  }
     
 }
 
-@media (max-width:1000px ){
-  
+/*--- Medium devices (tablets, 768px and up) ---*/
+@media (min-width: 768px){
+  .extras-3-box{
+    flex:auto;
+    width: 50%;
+  }
+  .fa,.fab{
+    margin-right: 5px;}
+
+  .box-3-bottom-flex{
+    display: none;
+    flex-wrap: nowrap;
+    visibility: hidden;
+  }
+  .box-3-bottom-flex-small{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+  }
+  .btn{
+    width: 100%;
+
+  }
+}
+
+/*--- Large devices (desktops, 992px and up) ---*/
+@media (min-width: 992px) { 
+  .box-3-bottom-flex-small{
+    display: none;
+    flex-wrap: nowrap;
+    visibility: hidden;
+  }
+  .box-3-bottom-flex{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+  }
+  .btn{
+    width: 50%;
+  }
+    
 }
 /*--- Extra large devices (large desktops, 1200px and up) ---*/
 @media (min-width: 1200px) { 
+  .extras-3-box{
+    flex:auto;
+    width: 20%;
+  }
+  .box-3-bottom-flex-small{
+    display: none;
+    flex-wrap: nowrap;
+    visibility: hidden;
+  }
+  .box-3-bottom-flex{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+  }
+  .btn{
+    width: 25%;
+  }
     
 }
