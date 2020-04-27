@@ -234,15 +234,10 @@ h6, .h6 {
   margin: auto;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.slide-item img{
+  width:100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .dots{
@@ -285,9 +280,12 @@ h6, .h6 {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media (min-width: 1200px) {
+  .slide-item img{
+    width:100%;
+    height: 900px;
+    object-fit: cover;
+  }
 }
 /*--- /Slider ---*/
 
@@ -3313,5 +3311,59 @@ h6, .h6 {
   }
 }
 /* --- /Text Align --- */
+
+/* --- Custom --- */
+
+/* --- Bagian Extra 1 --- */
+/* --- Card Extra 1 --- */
+.card-ex1{
+  width: 50%;
+}
+.card-ex1 img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  .card-ex1{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .card-ex1 img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-ex1{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .card-ex1 img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+/* --- /Card Extra 1 --- */
+/* --- /Bagian Extra 1 --- */
+
+/* --- /Custom --- */
 
 /*--- /Rifki ---*/
