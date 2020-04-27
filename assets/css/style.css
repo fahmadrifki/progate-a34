@@ -3516,4 +3516,67 @@ footer{
   }
 }
 
-
+/*--- Large devices (desktops, 992px and up) ---*/
+@media (min-width: 992px) { 
+  .box-3-bottom-flex-small{
+    display: none;
+    flex-wrap: nowrap;
+    visibility: hidden;
+  }
+  .box-3-bottom-flex{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+  }
+  .btn{
+    width: 50%;
+  }
+  .footer{
+    flex-direction: row;
+  }
+  .footer-left{
+    flex:auto;
+    text-align: left;
+    
+  }
+  .footer-right{
+    flex:auto;
+    text-align: right;
+  }
+  .fa,.fab{
+    margin-right: 0px;}
+    
+}
+/*--- Extra large devices (large desktops, 1200px and up) ---*/
+@media (min-width: 1200px) { 
+  .extras-3-box{
+    flex:auto;
+    width: 20%;
+  }
+  .box-3-bottom-flex-small{
+    display: none;
+    flex-wrap: nowrap;
+    visibility: hidden;
+  }
+  .box-3-bottom-flex{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+  }
+  .btn{
+    width: 25%;
+  }
+  .footer{
+    flex-direction: row;
+  }
+  .footer-left{
+    flex:auto;
+    text-align: left;
+    
+  }
+  .footer-right{
+    flex:auto;
+    text-align: right;
+  }
+    
+}
